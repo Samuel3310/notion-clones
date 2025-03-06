@@ -13,3 +13,40 @@ CLERK_SECRET_KEY=sk_test_HmMT9vefrQM4HJZ9DsWrX1VAfstiBb4xhTD6BNVArp
 NEXT_PUBLIC_LIVE_BLOCK_KEY=pk_dev_5bX3rEQUY5CJ6BkM1q8cQH02ibgaJW7GH1W7UuIfNHiv_fA8GjenmRmupJKEDtAz
 
 NEXT_LIVE_BLOCK_PRIVATE_KEY=sk_dev_O4W3Gn0n6s7X7YC--H7ISatTKEbsKwczag1yVUDgZGqfJMZeS_iWnbkmeNsHnEqC
+
+
+
+
+
+
+
+
+
+
+
+
+
+service_key.json
+{
+  "type": "service_account",
+  "project_id": "notion-clone-d1900",
+  "private_key_id": "91d98b9966ad278ad58bb8b6f6b18f74499add94",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC3x2NveEoqx7yZ\n6toxvLNyzrQ0gMG4aQoQEWvm97bKdMDIcATcDVkNxYQVzEVMqMm9exwmt0kZX511\nehS8YAaAb+VDdpX4gUxjTRyKHqusBln29lb9vXFyo/AVfjACjXtMWFVyEkLsV6zG\nbzf/q1YP110RHHo/NNhTRHdZCMVn1lVbvvq1T0UagB/lJVvAGPOx8gvUGpCn7fz2\nbA98/3b0yNCaFZXZhFDNrSg7Vnk1YRKjswcEUiXY8RbwxxIPJP0MIER/J36ilImV\nsaHIHgeJ8I89UqhSF7HP4F25eU/7w48ZrbpQKkJxcdYgUR7ApMI2z9ntHJAdu6qJ\n0v67dw7TAgMBAAECggEAW8rtcZnlgaSuITrarQkRoIB6JddB6zgb3Ja3DHAiDtFu\nES9SXg8Usfo71R9oZbfQvCGnl/boPhIx9aF6hfR4iuJY4u9yTONYIik73gkfuhaa\nDO5R2P8skRQtMK8Mj9nXAfUFCKryXlYUaDDZCYysudDaHVfZ/4QHoN+LtR7aatgc\nl9gKRAUQk4vdGhpAiQpSq77v+rq7U/81SupKt1H+2spMRpJjFxUA34oDkfNoBgxG\nDbSUy+XJB5357fKoVPWJRZAAHWhJjS+6A6b9DmihzBwIFssSvf2fO/n6VAiDxTAt\n2p++pmvHPzDx96UA5cwDdNkci3qjGdJcDtyI+rC0AQKBgQDfewoqfebhAgc0jSN7\nIk3wVkstNrCy6g05V8+8VxZPOunHLeN1yvSa62md7QCNSfO+usVLL/cxJvUjAWhn\nqlMBRrxVDEcvn14AfoRAo5EQY2znRTPbV8FQnX+2JKr1S6sGhm80V3H705+f03vU\nL+/yFIV50GMcOFZAw1ntpRJrAQKBgQDShWdLaAKj4DEW96mT4tOiObajWlaghChc\nDtr4hp1rQjz0PNQ3ye1K1L4sqYgxUvQ7in9hg2hKYfCt2OeGL/g1doRwumaAvXl0\ndvDPoxs0hVUvOmYU10xYFMJc7PQVGjTSASSEhABqcWYHPye3YAIOJQn4N/JR127I\ngTF6Y+nd0wKBgA34giUv47wTRWIKpLow5dBthJuZ/Kfiq9r221y50QI4+55hBwQ5\nINuCdgLSayNqCRvWTzkpEXn4JoD+uIkqg6/jvShP8S9P9i9vuVLVJt9wZ8F5eQlw\nTfx9LBu15R4akeGBi/gos05751G1hds49/YZRFLeLSP5faLk031gwWsBAoGAfm5N\n1dSWWVLoSHHerwk3rqLYlAxKIEaecoMdcMpvuh3iu4/Yp9SmpR1VRT9fore+JBAO\nZkLkHF/riozMpyMh/wG5knXv33treM2B3EGJsiYtPZrl+bg/ilqVS/emsxG1DTZQ\ndyFLmqGV894y/Qc01Mfbz+3RouMuDk7Ap09gAa8CgYBwqZzbpnnKyj3dXSLuh3pa\nHTf0zUgtrqguT3OFmQK/CUcb038F0GigMiyr4oueMe1km6Q4HVf+0YM9rOkG0Rww\nwE5cZpMIhC8FzYTGv1x/VDlrp8iRhuoevG6qktMmjVbTfn602SdpYf/lkQKEkwEU\niidN45lhIr3wgbkj3Kq2KA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-fbsvc@notion-clone-d1900.iam.gserviceaccount.com",
+  "client_id": "105067161612104388231",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40notion-clone-d1900.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+
+
+
+
+next.env.d.ts
+/// <reference types="next" />
+/// <reference types="next/image-types/global" />
+
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/app/api-reference/config/typescript for more information.
