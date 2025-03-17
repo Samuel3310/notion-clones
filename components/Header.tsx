@@ -7,7 +7,6 @@ import {
   UserButton,
   useUser,
 } from "@clerk/nextjs";
-import { Button } from "./ui/button";
 import BreadCrumbs from "./BreadCrumbs";
 
 const Header = () => {

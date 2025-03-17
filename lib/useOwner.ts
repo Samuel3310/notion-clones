@@ -1,3 +1,4 @@
+
 import { db } from "@/firebase";
 import { useUser } from "@clerk/nextjs";
 import { useRoom } from "@liveblocks/react/suspense";
@@ -5,11 +6,10 @@ import { collectionGroup, query, where } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useCollection } from "react-firebase-hooks/firestore";
 
-type Owner = () => boolean;
-export function useOwner(): Owner {
+export function useOwner(): boolean {
   const { user } = useUser();
   const room = useRoom();
-  const [isOwner, setIsOwner] = useState(false);
+  const [isOwner, setIsOwner] = useState<boolean>(false);
   const [usersInRoom] = useCollection(
     user && query(collectionGroup(db, "rooms"), where("roomId", "==", room.id))
   );
@@ -30,5 +30,5 @@ export function useOwner(): Owner {
     }
   }, [usersInRoom, user]);
 
-  return () => isOwner;
+  return isOwner;
 }

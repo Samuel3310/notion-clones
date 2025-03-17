@@ -8,6 +8,10 @@ import { db } from "@/firebase";
 import { useDocumentData } from "react-firebase-hooks/firestore";
 import Editor from "./Editor";
 import { useOwner } from "@/lib/useOwner";
+import DeleteDocument from "./DeleteDocument";
+import InviteUser from "./InviteUser";
+import ManageUsers from "./ManageUsers";
+import Avatars from "./Avatars";
 
 const Document = ({ id }: { id: string }) => {
   const [isUpdating, startTransition] = useTransition();
@@ -28,6 +32,8 @@ const Document = ({ id }: { id: string }) => {
       });
     }
   };
+
+
   return (
     <div className="flex-1 h-full bg-white p-5">
       {/* title field */}
@@ -47,13 +53,21 @@ const Document = ({ id }: { id: string }) => {
           </Button>
           {isOwner && (
             <>
-              <p>I own this</p>
+              {/* invite user and delete */}
+              <InviteUser />
+              <DeleteDocument />
             </>
           )}
         </form>
       </div>
-      {/* avatar  */}
-      {/* manage User*/}
+      <div className="flex max-w-6xl mx-auto justify-between items-center mb-5">
+      <ManageUsers />
+        {/* manage User*/}
+
+        {/* avatar  */}
+        <Avatars /> 
+      </div>
+
       <hr className="pb-10" />
       {/* collaborative Editor  */}
       <Editor />
